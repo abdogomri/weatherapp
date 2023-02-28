@@ -19,10 +19,19 @@ interface WeatherDao {
      * Observes a single weather object.
      *
      * @param cityId the city id.
-     * @return the weather of the city with cityId.
+     * @return a Stream of the weather of the city with cityId.
      */
     @Query("SELECT * FROM Weather WHERE cityid = :cityId")
     fun observeCityWeatherById(cityId: String): Flow<Weather>
+
+    /**
+     * Select a weather object by id.
+     *
+     * @param cityId the city id.
+     * @return the weather of the city with cityId.
+     */
+    @Query("SELECT * FROM Weather WHERE cityid = :cityId")
+    suspend fun getCityWeatherById(cityId: String): Weather?
 
 
     /**
