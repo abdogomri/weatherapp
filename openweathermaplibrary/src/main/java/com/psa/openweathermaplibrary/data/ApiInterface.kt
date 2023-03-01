@@ -2,7 +2,7 @@ package com.psa.openweathermaplibrary.data
 
 import com.psa.openweathermaplibrary.BuildConfig
 import com.psa.openweathermaplibrary.cityinfo.data.remote.CityInfo
-import com.psa.openweathermaplibrary.cityweather.data.remote.CityWeather
+import com.psa.openweathermaplibrary.weather_feature.data.source.remote.model.CityWeather
 import com.psa.openweathermaplibrary.utils.Constants.FIND_END_POINT
 import com.psa.openweathermaplibrary.utils.Constants.METRIC_MODE
 import com.psa.openweathermaplibrary.utils.Constants.WEATHER_END_POINT

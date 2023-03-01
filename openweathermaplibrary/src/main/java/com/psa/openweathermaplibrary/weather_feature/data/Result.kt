@@ -1,4 +1,4 @@
-package com.psa.weatherapp.weather_feature.data
+package com.psa.openweathermaplibrary.weather_feature.data
 
 /**
  * A generic class that holds a value or error.

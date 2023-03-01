@@ -1,4 +1,4 @@
-package com.psa.openweathermaplibrary.cityweather.data.remote
+package com.psa.openweathermaplibrary.weather_feature.data.source.remote.model
 
 import com.google.gson.annotations.SerializedName
 

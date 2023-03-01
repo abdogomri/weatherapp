@@ -1,7 +1,7 @@
-package com.psa.weatherapp.weather_feature.data.source
+package com.psa.openweathermaplibrary.weather_feature.data.source
 
-import com.psa.weatherapp.weather_feature.data.Result
-import com.psa.weatherapp.weather_feature.data.Weather
+import com.psa.openweathermaplibrary.weather_feature.data.Result
+import com.psa.openweathermaplibrary.weather_feature.data.Weather
 import kotlinx.coroutines.flow.Flow
 
 
