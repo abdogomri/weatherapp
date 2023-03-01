@@ -1,8 +1,8 @@
 package com.psa.openweathermaplibrary.data
 
 import com.psa.openweathermaplibrary.BuildConfig
-import com.psa.openweathermaplibrary.cityinfo.data.remote.CityInfo
-import com.psa.openweathermaplibrary.weather_feature.data.source.remote.model.CityWeather
+import com.psa.openweathermaplibrary.data.source.remote.model.CitiesSearchInfo
+import com.psa.openweathermaplibrary.data.source.remote.model.CityWeather
 import com.psa.openweathermaplibrary.utils.Constants.FIND_END_POINT
 import com.psa.openweathermaplibrary.utils.Constants.METRIC_MODE
 import com.psa.openweathermaplibrary.utils.Constants.WEATHER_END_POINT
@@ -23,6 +23,6 @@ interface ApiInterface{
     suspend fun getCitiesListByName(
         @Query("q") searchQuery: String,
         @Query("appid") appId: String = BuildConfig.api_key
-    ): CityInfo
+    ): CitiesSearchInfo
 
 }

@@ -1,7 +1,17 @@
-package com.psa.openweathermaplibrary.cityinfo.data.remote
+package com.psa.openweathermaplibrary.data.source.remote.model
 
 import com.google.gson.annotations.SerializedName
+import com.psa.openweathermaplibrary.data.source.remote.model.*
 
+
+data class CitiesSearchInfo (
+
+  @SerializedName("message" ) var message : String?         = null,
+  @SerializedName("cod"     ) var cod     : String?         = null,
+  @SerializedName("count"   ) var count   : Int?            = null,
+  @SerializedName("list"    ) var list    : ArrayList<List> = arrayListOf()
+
+)
 
 data class List (
 
@@ -11,7 +21,7 @@ data class List (
   @SerializedName("main"    ) var main    : Main?              = Main(),
   @SerializedName("dt"      ) var dt      : Int?               = null,
   @SerializedName("wind"    ) var wind    : Wind?              = Wind(),
-  @SerializedName("sys"     ) var sys     : Sys?               = Sys(),
+  @SerializedName("sys"     ) var sys     : Sys               = Sys(),
   @SerializedName("rain"    ) var rain    : String?            = null,
   @SerializedName("snow"    ) var snow    : String?            = null,
   @SerializedName("clouds"  ) var clouds  : Clouds?            = Clouds(),

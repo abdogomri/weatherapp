@@ -1,10 +1,10 @@
-package com.psa.openweathermaplibrary.weather_feature.data.source.local
+package com.psa.openweathermaplibrary.data.source.local
 
-import com.psa.openweathermaplibrary.weather_feature.data.Result
-import com.psa.openweathermaplibrary.weather_feature.data.Result.Success
-import com.psa.openweathermaplibrary.weather_feature.data.Result.Error
-import com.psa.openweathermaplibrary.weather_feature.data.Weather
-import com.psa.openweathermaplibrary.weather_feature.data.source.WeatherDataSource
+import com.psa.openweathermaplibrary.data.Result
+import com.psa.openweathermaplibrary.data.Result.Success
+import com.psa.openweathermaplibrary.data.Result.Error
+import com.psa.openweathermaplibrary.data.Weather
+import com.psa.openweathermaplibrary.data.source.WeatherDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

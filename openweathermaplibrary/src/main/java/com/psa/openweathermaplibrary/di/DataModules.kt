@@ -4,12 +4,12 @@ import android.content.Context
 import androidx.room.Room
 import com.psa.openweathermaplibrary.data.ApiInterface
 import com.psa.openweathermaplibrary.data.ApiInterfaceContainer
-import com.psa.openweathermaplibrary.weather_feature.data.source.DefaultWeatherRepository
-import com.psa.openweathermaplibrary.weather_feature.data.source.WeatherDataSource
-import com.psa.openweathermaplibrary.weather_feature.data.source.WeatherRepository
-import com.psa.openweathermaplibrary.weather_feature.data.source.local.WeatherDatabase
-import com.psa.openweathermaplibrary.weather_feature.data.source.local.WeatherLocalDataSource
-import com.psa.openweathermaplibrary.weather_feature.data.source.remote.WeatherRemoteDataSource
+import com.psa.openweathermaplibrary.data.source.DefaultWeatherRepository
+import com.psa.openweathermaplibrary.data.source.WeatherDataSource
+import com.psa.openweathermaplibrary.data.source.WeatherRepository
+import com.psa.openweathermaplibrary.data.source.local.WeatherDatabase
+import com.psa.openweathermaplibrary.data.source.local.WeatherLocalDataSource
+import com.psa.openweathermaplibrary.data.source.remote.WeatherRemoteDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -49,7 +49,7 @@ object DataSourceModule {
     @Provides
     fun provideWeatherRemoteDataSource(
         api: ApiInterface
-    ): WeatherDataSource  {
+    ): WeatherDataSource {
         return WeatherRemoteDataSource(api)
     }
 

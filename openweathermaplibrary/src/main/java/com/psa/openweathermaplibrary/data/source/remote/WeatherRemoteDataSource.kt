@@ -1,10 +1,10 @@
-package com.psa.openweathermaplibrary.weather_feature.data.source.remote
+package com.psa.openweathermaplibrary.data.source.remote
 
 import com.psa.openweathermaplibrary.data.ApiInterface
-import com.psa.openweathermaplibrary.weather_feature.data.Result
-import com.psa.openweathermaplibrary.weather_feature.data.Weather
-import com.psa.openweathermaplibrary.weather_feature.data.source.WeatherDataSource
-import com.psa.openweathermaplibrary.weather_feature.data.source.remote.mappers.toWeather
+import com.psa.openweathermaplibrary.data.Result
+import com.psa.openweathermaplibrary.data.Weather
+import com.psa.openweathermaplibrary.data.source.WeatherDataSource
+import com.psa.openweathermaplibrary.data.source.remote.mappers.toWeather
 import kotlinx.coroutines.flow.Flow
 import java.lang.Exception
 import javax.inject.Inject

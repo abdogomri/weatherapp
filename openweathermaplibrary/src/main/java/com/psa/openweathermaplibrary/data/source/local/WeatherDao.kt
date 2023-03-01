@@ -1,7 +1,7 @@
-package com.psa.openweathermaplibrary.weather_feature.data.source.local
+package com.psa.openweathermaplibrary.data.source.local
 
 import androidx.room.*
-import com.psa.openweathermaplibrary.weather_feature.data.Weather
+import com.psa.openweathermaplibrary.data.Weather
 import kotlinx.coroutines.flow.Flow
 
 @Dao
