@@ -25,6 +25,8 @@ in case of the offline useCase see the diagram bellow :
 
 As we can see in the sequence diagrams, the business logic is in the Default repository , it's where we define how data is retrieved and how it's stored in a convenient way , when the user has no internet we can retrieve data from the database , and when we have internet connection we can update the local data , we use the single source of truth principle, by always retrieving the updated data from local data source, on the application we are using interfaces as a method of abstraction , and we use Hilt as a dependency injection methode to provide the implementation of interfaces , this method is the best for our application extensibility and maintability , and makes it easy for testing .
 
+connection between datasources and view models is done using Coroutines for asynchronous programming (so we don't block our main thread), and we use Flows and StateFlows for reactive programming principle, databinding to access data from the view ( we access uiStates ), Databinding supports reactive programming (State flow in our case) which means a change in UiState -> change in the view .
+
 
 
 
