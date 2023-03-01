@@ -11,7 +11,7 @@ import com.psa.openweathermaplibrary.data.Weather
  * Note that exportSchema should be true in production databases.
  */
 
-@Database(entities = [Weather::class], version = 1, exportSchema = false)
+@Database(entities = [Weather::class], version = 1, exportSchema = true)
 abstract class WeatherDatabase: RoomDatabase() {
     abstract fun weatherDao(): WeatherDao
 }

@@ -2,7 +2,6 @@ package com.psa.openweathermaplibrary.data.source.remote.mappers
 
 import com.psa.openweathermaplibrary.data.source.remote.model.CityWeather
 import com.psa.openweathermaplibrary.data.Weather
-import com.psa.openweathermaplibrary.data.source.remote.model.CityInfo
 
 fun CityWeather.toWeather(): Weather {
     return Weather(
